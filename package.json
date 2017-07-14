@@ -1,0 +1,55 @@
+{
+  "name": "nano-assign",
+  "version": "0.0.0",
+  "description": "Minimalistic Object.assign",
+  "repository": {
+    "url": "egoist/nano-assign",
+    "type": "git"
+  },
+  "main": "dist/nano-assign.common.js",
+  "unpkg": "dist/nano-assign.js",
+  "cdn": "dist/nano-assign.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest && npm run lint",
+    "lint": "xo",
+    "prepublish": "npm run build",
+    "build": "bili --format umd,cjs,umdCompress --banner --module-name assign"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          ["env", {
+            "targets": {
+              "node": "current"
+            }
+          }]
+        ]
+      }
+    }
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "jest-cli": "^19.0.0",
+    "eslint-config-rem": "^3.0.0",
+    "xo": "^0.18.0",
+    "babel-preset-env": "^1.4.0",
+    "bili": "^0.17.0"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": [
+      "jest"
+    ]
+  }
+}
