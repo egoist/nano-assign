@@ -1,5 +1,7 @@
-import nanoAssign from '../src'
+import assign from '../src'
 
 test('main', () => {
-  expect(typeof nanoAssign).toBe('function')
+  expect(assign({}, { foo: 'foo' }, null, undefined, { foo: 'bar' })).toEqual({
+    foo: 'bar'
+  })
 })

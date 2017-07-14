@@ -36,9 +36,6 @@
       }
     }
   },
-  "dependencies": {
-
-  },
   "devDependencies": {
     "jest-cli": "^19.0.0",
     "eslint-config-rem": "^3.0.0",
@@ -47,7 +44,7 @@
     "bili": "^0.17.0"
   },
   "xo": {
-    "extends": "rem",
+    "extends": "rem/prettier",
     "envs": [
       "jest"
     ]
