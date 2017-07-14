@@ -1,6 +1,6 @@
 {
   "name": "nano-assign",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Minimalistic Object.assign",
   "repository": {
     "url": "egoist/nano-assign",
@@ -27,11 +27,14 @@
     "env": {
       "test": {
         "presets": [
-          ["env", {
-            "targets": {
-              "node": "current"
+          [
+            "env",
+            {
+              "targets": {
+                "node": "current"
+              }
             }
-          }]
+          ]
         ]
       }
     }
