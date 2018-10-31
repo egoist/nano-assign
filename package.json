@@ -8,9 +8,11 @@
   },
   "main": "dist/nano-assign.common.js",
   "unpkg": "dist/nano-assign.js",
+  "types": "index.d.ts",
   "cdn": "dist/nano-assign.js",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "jest && npm run lint",
