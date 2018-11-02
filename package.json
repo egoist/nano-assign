@@ -1,6 +1,6 @@
 {
   "name": "nano-assign",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimalistic Object.assign",
   "repository": {
     "url": "egoist/nano-assign",
